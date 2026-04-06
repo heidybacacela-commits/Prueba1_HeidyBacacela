@@ -1,13 +1,543 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REPOSITORIO</title>
+    <title>Papelería Creativa | Inspiración en Cada Detalle</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <hr>
-    <h1>Paul Pauta</h1>
 
+<body>
+
+    <!-- 1. Header Fijo -->
+    <header class="header">
+        <div class="container navbar">
+            <div class="logo">
+                <i class="fa-solid fa-paintbrush"></i>
+                Papelería Creativa
+            </div>
+
+            <nav class="nav-links">
+                <a href="#inicio" class="nav-link active">Inicio</a>
+                <a href="#productos" class="nav-link">Productos</a>
+                <a href="#ofertas" class="nav-link">Ofertas</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#productos" class="btn btn-primary d-none-mobile">
+                    <i class="fa-solid fa-store"></i> Ver catálogo
+                </a>
+                <a href="#carrito" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge">3</span>
+                </a>
+                <div class="mobile-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-star"></i> Calidad y precio garantizado
+                </div>
+                <h1 class="hero-title">
+                    Equipa tu mente, <span>crea sin límites</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Descubre los mejores útiles escolares, artículos de oficina y material artístico para darle vida a
+                    todas tus ideas. Todo lo que necesitas en un solo lugar.
+                </p>
+                <div class="hero-actions">
+                    <a href="#productos" class="btn btn-primary">Explorar productos</a>
+                    <a href="#ofertas" class="btn btn-outline">Ver ofertas</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="C:\Users\USUARIO\.gemini\antigravity\brain\dd0be25f-5ac8-4d15-b1fd-09d8c65283d3\hero_office_supplies_1775496479614.png"
+                    alt="Escritorio moderno con útiles" class="hero-image">
+                <div class="hero-floating-card">
+                    <div class="floating-card-icon">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <div class="floating-card-text">
+                        <h4>Envío Express</h4>
+                        <p>Recibe hoy mismo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Sección de Categorías -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">¿Qué estás buscando?</h2>
+                <p class="section-subtitle">Explora nuestras categorías principales y encuentra exactamente lo que
+                    necesitas para tu colegio o trabajo.</p>
+            </div>
+
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <h3>Cuadernos</h3>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3>Escritura</h3>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3>Mochilas</h3>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3>Arte y Manualidades</h3>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-paperclip"></i>
+                    </div>
+                    <h3>Oficina</h3>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <h3>Tecnología Escolar</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Banner de Promociones -->
+    <section id="ofertas">
+        <div class="container">
+            <div class="promo-banner">
+                <div class="promo-content">
+                    <div class="promo-tag">OFERTA DE TEMPORADA</div>
+                    <h2 class="promo-title">Regreso a clases con hasta 30% OFF</h2>
+                    <p class="promo-desc">Aprovecha los descuentos en listas escolares completas seleccionadas.
+                        Promoción válida hasta agotar stock.</p>
+                    <a href="#contacto" class="btn btn-secondary">Cotizar mi lista</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Productos Destacados -->
+    <section id="productos" class="section products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Productos Destacados</h2>
+                <p class="section-subtitle">Los artículos favoritos de nuestros clientes. Calidad garantizada.</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="product-badge">Top Ventas</div>
+                    <div class="product-img-wrapper">
+                        <img src="C:\Users\USUARIO\.gemini\antigravity\brain\dd0be25f-5ac8-4d15-b1fd-09d8c65283d3\notebook_product_1775496548323.png"
+                            alt="Cuadernos Premium" class="product-img">
+                        <div class="product-actions">
+                            <button class="product-action-btn"><i class="fa-solid fa-heart"></i></button>
+                            <button class="product-action-btn"><i class="fa-solid fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cuadernos</span>
+                        <h3 class="product-title">Set de Cuadernos Premium Minimalistas</h3>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half-stroke"></i> (42)
+                        </div>
+                        <div class="product-price-row">
+                            <div>
+                                <div class="product-price">$12.50</div>
+                            </div>
+                            <button class="btn btn-primary btn-add-cart"><i class="fa-solid fa-plus"></i>
+                                Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <div class="product-badge" style="background-color: var(--secondary); color: var(--dark);">Oferta
+                    </div>
+                    <div class="product-img-wrapper">
+                        <img src="C:\Users\USUARIO\.gemini\antigravity\brain\dd0be25f-5ac8-4d15-b1fd-09d8c65283d3\pens_product_1775496762158.png"
+                            alt="Fine liners" class="product-img">
+                        <div class="product-actions">
+                            <button class="product-action-btn"><i class="fa-solid fa-heart"></i></button>
+                            <button class="product-action-btn"><i class="fa-solid fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Escritura</span>
+                        <h3 class="product-title">Kit 24 Marcadores Punta Fina</h3>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i> (128)
+                        </div>
+                        <div class="product-price-row">
+                            <div>
+                                <div class="product-price">$18.99 <span class="product-old-price">$25.00</span></div>
+                            </div>
+                            <button class="btn btn-primary btn-add-cart"><i class="fa-solid fa-plus"></i>
+                                Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Mochila" class="product-img">
+                        <div class="product-actions">
+                            <button class="product-action-btn"><i class="fa-solid fa-heart"></i></button>
+                            <button class="product-action-btn"><i class="fa-solid fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Mochilas</span>
+                        <h3 class="product-title">Mochila Escolar Ergonomica</h3>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-regular fa-star"></i> (15)
+                        </div>
+                        <div class="product-price-row">
+                            <div>
+                                <div class="product-price">$35.00</div>
+                            </div>
+                            <button class="btn btn-primary btn-add-cart"><i class="fa-solid fa-plus"></i>
+                                Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Arte" class="product-img">
+                        <div class="product-actions">
+                            <button class="product-action-btn"><i class="fa-solid fa-heart"></i></button>
+                            <button class="product-action-btn"><i class="fa-solid fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Arte y Manualidades</span>
+                        <h3 class="product-title">Set Acuarelas Profesionales 36 cols</h3>
+                        <div class="product-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half-stroke"></i> (89)
+                        </div>
+                        <div class="product-price-row">
+                            <div>
+                                <div class="product-price">$22.40</div>
+                            </div>
+                            <button class="btn btn-primary btn-add-cart"><i class="fa-solid fa-plus"></i>
+                                Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Beneficios -->
+    <section class="section benefits">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <div class="benefit-content">
+                        <h4>Envíos Rápidos</h4>
+                        <p>Recibe tus productos en 24h a nivel nacional.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fa-solid fa-tags"></i></div>
+                    <div class="benefit-content">
+                        <h4>Precios Accesibles</h4>
+                        <p>Las mejores marcas al mejor precio siempre.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fa-solid fa-medal"></i></div>
+                    <div class="benefit-content">
+                        <h4>Calidad Garantizada</h4>
+                        <p>Productos originales y excelente durabilidad.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fa-solid fa-headset"></i></div>
+                    <div class="benefit-content">
+                        <h4>Atención Personalizada</h4>
+                        <p>Soporte por WhatsApp para todas tus compras.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Servicios Adicionales -->
+    <section id="servicios" class="section services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Servicios Adicionales</h2>
+                <p class="section-subtitle">No solo vendemos productos, también te ofrecemos soluciones prácticas para
+                    tu día a día.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-print"></i></div>
+                    <h3>Impresiones</h3>
+                    <p>Impresiones a color y blanco y negro de alta calidad. Papel bond, fotográfico y especial.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-copy"></i></div>
+                    <h3>Copias</h3>
+                    <p>Servicio rápido de copiado masivo, ampliaciones y reducciones precisas al instante.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-file-shield"></i></div>
+                    <h3>Plastificado</h3>
+                    <p>Protege tus documentos importantes con nuestro servicio de termo-plastificado duradero.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-book-open"></i></div>
+                    <h3>Empastado</h3>
+                    <p>Encuadernación en espiral, anillo doble O y empastes rústicos para tus tesis o informes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. y 9. Información y Testimonios -->
+    <section class="section">
+        <div class="container">
+            <div class="info-testimonials-wrap">
+                <!-- Info del negocio -->
+                <div class="business-info">
+                    <h3>Sobre Nosotros</h3>
+                    <div class="info-card">
+                        <p style="margin-bottom: 20px;">En <strong>Papelería Creativa</strong>, nos apasiona brindarte
+                            las mejores herramientas para tu educación y trabajo. Desde 2010, somos tu aliado de
+                            confianza, ofreciendo un amplio catálogo y un excelente servicio.</p>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot info-icon"></i>
+                            <div class="info-content">
+                                <h4>Ubicación</h4>
+                                <p>Av. Principal 123 y Calle Secundaria, Centro Comercial Plaza, Local 4.</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-clock info-icon"></i>
+                            <div class="info-content">
+                                <h4>Horario de Atención</h4>
+                                <p>Lunes a Viernes: 08:30 AM - 18:30 PM<br>Sábados: 09:00 AM - 14:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonios -->
+                <div class="testimonials">
+                    <h3>Lo que dicen nuestros clientes</h3>
+                    <div class="testimonial-slider">
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Excelente servicio! Mandé mi lista de útiles por WhatsApp y al
+                                día siguiente la tenía armada y en la puerta de mi casa. Los precios son muy buenos."
+                            </p>
+                            <div class="user-info">
+                                <div class="avatar">MR</div>
+                                <div class="user-details">
+                                    <h5>María Rodríguez</h5>
+                                    <span>Madre de familia</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <p class="testimonial-text">"Encuentro todo el material de arte especializado que uso para
+                                mis proyectos de universidad. Siempre tienen stock de mis rapidógrafos y acuarelas
+                                favoritas."</p>
+                            <div class="user-info">
+                                <div class="avatar">DM</div>
+                                <div class="user-details">
+                                    <h5>David Méndez</h5>
+                                    <span>Estudiante de Arquitectura</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Contacto -->
+    <section id="contacto" class="section contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info-side">
+                    <h2>¿Necesitas Ayuda?</h2>
+                    <p>Estamos listos para responder tus preguntas o asesorarte en tus compras. Escríbenos directamente
+                        o usa nuestro formulario de contacto rápido.</p>
+
+                    <a href="https://wa.me/1234567890" target="_blank">
+                        <i class="fa-brands fa-whatsapp" style="font-size: 1.5rem;"></i>
+                        Chatear por WhatsApp
+                    </a>
+                </div>
+                <div class="contact-form-side">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" class="form-control" placeholder="Ej. Juan Pérez" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" class="form-control" placeholder="tu@correo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tu mensaje</label>
+                            <textarea id="message" class="form-control" placeholder="¿En qué te podemos ayudar?"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fa-solid fa-paintbrush"></i> Papelería Creativa
+                    </div>
+                    <p>Equipando mentes creativas desde 2010 con los mejores productos de papelería, oficina y
+                        tecnología escolar.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#ofertas">Ofertas</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                        <li><a href="#">Envíos y Devoluciones</a></li>
+                        <li><a href="#">Facturación Electrónica</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4 class="footer-title">Contacto</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fa-solid fa-phone" style="margin-right: 8px;"></i> +593 9 1234
+                                5678</a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope" style="margin-right: 8px;"></i>
+                                info@papeleriacreativa.com</a></li>
+                        <li><a href="#"><i class="fa-solid fa-map-location-dot" style="margin-right: 8px;"></i> Ver en
+                                el mapa</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Papelería Creativa. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling para los enlaces de navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+
+                    // Actualizar estado activo
+                    document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+                    if (this.classList.contains('nav-link')) {
+                        this.classList.add('active');
+                    }
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+                header.style.padding = '5px 0';
+            } else {
+                header.style.boxShadow = '0 1px 2px 0 rgba(0, 0, 0, 0.05)';
+                header.style.padding = '0';
+            }
+        });
+    </script>
 </body>
+
 </html>
